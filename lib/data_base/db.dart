@@ -1,21 +1,24 @@
 import 'package:crud_sqlite_app/data_base/tables.dart';
-import 'package:sqflite/sqflite.dart';
-import 'package:sqflite/sqlite_api.dart';
 import 'package:path/path.dart';
+import 'package:sqflite/sqflite.dart';
 
 class Db {
-  String name = "myDiary";
   int version = 1;
+  String name = "myDiary";
 
   Future<Database> open() async {
-    String path = join(await getDatabasesPath());
-    return openDatabase(path,
-        version: version, onConfigure: onConfigure, onCreate: onCreate);
+    String path = join(await getDatabasesPath(), name);
+    return openDatabase(
+      path,
+      version: version,
+      onConfigure: onConfigure,
+      onCreate: onCreate,
+    );
   }
 
   onCreate(Database db, int version) async {
-    for (var script in tables) {
-      await db.execute(script);
+    for (var table in tables) {
+      await db.execute(table);
     }
   }
 

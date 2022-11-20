@@ -1,4 +1,4 @@
-package com.example.crud_sqllite_app
+package com.example.crud_sqlite_app
 
 import io.flutter.embedding.android.FlutterActivity
 

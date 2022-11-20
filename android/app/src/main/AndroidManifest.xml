@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.crud_sqllite_app">
+    package="com.example.crud_sqlite_app">
    <application
-        android:label="crud_sqllite_app"
+        android:label="crud_sqlite_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -1,4 +1,4 @@
-# crud_sqllite_app
+# crud_sqlite_app
 
 A new Flutter project.
 

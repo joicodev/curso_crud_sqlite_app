@@ -1,6 +1,6 @@
 {
-    "name": "crud_sqllite_app",
-    "short_name": "crud_sqllite_app",
+    "name": "crud_sqlite_app",
+    "short_name": "crud_sqlite_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
